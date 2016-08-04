@@ -1,0 +1,51 @@
+_repo: The-Mystery-of-the-Yellow-Room_1685
+_version: 0.0.1
+alternative_title: Le mystère de la chambre jaune. English
+creator:
+  author:
+    agent_name: Leroux, Gaston
+    birthdate: 1868
+    deathdate: 1927
+    gutenberg_agent_id: '112'
+    url: http://www.gutenberg.org/2009/agents/112
+    wikipedia: http://en.wikipedia.org/wiki/Gaston_Leroux
+description: "The Mystery of the Yellow Room (in French Le mystère de la chambre jaune)\
+  \ by Gaston Leroux, is one of the first locked-room mystery crime fiction novels.\
+  \ It was first published in France in the periodical L'Illustration from September\
+  \ 1907 to November 1907, then in its own right in 1908.\nIt is the first novel starring\
+  \ fictional reporter Joseph Rouletabille and concerns a complex, and seemingly impossible,\
+  \ crime in which the criminal appears to disappear from a locked room. Leroux provides\
+  \ the reader with detailed, precise diagrams and floorplans illustrating the crime\
+  \ scene. The emphasis of the story is firmly on the intellectual challenge to the\
+  \ reader, who will almost certainly be hard pressed to unravel every detail of the\
+  \ situation.\nThe novel finds its continuation in The Perfume of the Lady in Black,\
+  \ wherein a number of the characters familiar from this story reappear.\n From Wikipedia\
+  \ (CC BY-SA)."
+gutenberg_bookshelf: Detective Fiction
+gutenberg_issued: '1999-03-01'
+gutenberg_type: Text
+identifiers:
+  gutenberg: '1685'
+  wikidata: Q2563691
+language: en
+publisher: Project Gutenberg
+rights: Public domain in the USA.
+rights_url: http://creativecommons.org/about/pdm
+subjects:
+- !lcsh 'Detective and mystery stories'
+- !lcsh 'Rouletabille, Joseph (Fictitious character) -- Fiction'
+- !lcsh 'Reporters and reporting -- Fiction'
+- !lcc 'PQ'
+- GITenberg
+title: The Mystery of the Yellow Room
+url: http://www.gutenberg.org/ebooks/1685
+wikipedia:
+- https://fr.wikipedia.org/wiki/Le_Myst%C3%A8re_de_la_chambre_jaune
+- https://ar.wikipedia.org/wiki/%D9%84%D8%BA%D8%B2_%D8%A7%D9%84%D8%BA%D8%B1%D9%81%D8%A9_%D8%A7%D9%84%D8%B5%D9%81%D8%B1%D8%A7%D8%A1
+- https://zh.wikipedia.org/wiki/%E9%BB%83%E8%89%B2%E6%88%BF%E9%96%93%E7%9A%84%E7%A7%98%E5%AF%86
+- https://ja.wikipedia.org/wiki/%E9%BB%84%E8%89%B2%E3%81%84%E9%83%A8%E5%B1%8B%E3%81%AE%E7%A7%98%E5%AF%86
+- https://es.wikipedia.org/wiki/El_misterio_del_cuarto_amarillo
+- https://en.wikipedia.org/wiki/The_Mystery_of_the_Yellow_Room
+- https://it.wikipedia.org/wiki/Il_mistero_della_camera_gialla
+- https://ru.wikipedia.org/wiki/%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0_%D0%B6%D1%91%D0%BB%D1%82%D0%BE%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D1%8B
+- https://tr.wikipedia.org/wiki/Sar%C4%B1_Odan%C4%B1n_Esrar%C4%B1
