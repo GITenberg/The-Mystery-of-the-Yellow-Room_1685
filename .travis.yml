@@ -1,0 +1,61 @@
+sudo: required
+dist: trusty
+language: ruby
+
+before_install:
+before_install:
+- gem install asciidoctor -v 1.5.2
+- gem install tilt
+- sudo pip install git+https://github.com/gitenberg-dev/gitberg
+- sudo pip install pillow
+- sudo pip install cssutils
+- sudo pip install docutils
+- sudo pip install roman
+- sudo pip install git+https://github.com/gitenberg-dev/pg-epubmaker
+script:
+- VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
+- git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
+- sudo pip install -r asciidoctor-htmlbook/gitberg-machine/requirements.txt
+
+- /usr/bin/python -c "from gitenberg import travis; travis.build_epub()"
+- ebook-convert book.epub book.mobi
+- xvfb-run ebook-convert book.epub book.pdf
+branches:
+  only:
+  - master
+notifications:
+  webhooks:
+    urls:
+      - https://unglue.it/api/travisci/webhook
+    on_success: always
+    on_failure: never
+    on_start: never
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: i9wa7uL3vustkneN6RZ8nr/KxZJmR0+Q4npPy1bd9obkC7zBIyYl8fXVuTMp37Pg8QHpcHK4ZTigXPIjsK0n13XfAUk029QOS6mMMldopndKA/fSx7Hbx5vGwr86WVwZ1sLeXxRyq00/3O6qo6hjLxHMfAdIBC/oAZSc2ZplUHmpcZQiFELDUWgBKf9AYMYcneBbs+gSN7bz72vQwRvKRHDFxkaMUD3z0KRq7by5KiMqn3xv+ctXgBrgGdpD2po7q2N9z6dpxdg4aDXJ2X+IA7Kmkm2eec+WNwfV4DB9yA34tg2adgrNBrGcoN6vVlISIqg9Vqa/TUrwdb6HaOyq+mzze7+oN31wVxGPgHmGrbW46DVnP3WqNAkLzIYM6NEU40zekQtFhRVKtaW1eXMA1QU1xWi9Bvdf4EFijOrCf/dqtLiNzlN9EtHODkqJwmQ46TMdM2vN63IwDL3R8pzo0c7jHUpbQiIQGT+NE1oz5JQZE/Ci+iHUddYGpxlvM1GsOmo3Efz7h3U6LE7KZbYJtd2m0qtpZtR64C5Gf8yGGttyXe1mzqYzSZboz/0BZcTtJfqH7gJ4t6nAgx8tF2R4qUKAgawD9oqXgDMkYr4/TtuUVRk5SYQ3dn9LDQonqxyqd0ACNEBpvVJnMe88zAzBuU+HLyTl7udEgtUyQMHuU+w=
+  file:
+    - book.epub
+    - book.mobi
+    - book.pdf
+  "on":
+    repo: GITenberg/The-Mystery-of-the-Yellow-Room_1685
+addons:
+  apt:
+    packages:
+    - xsltproc
+    - xvfb
+    - calibre
+    - python-pip
+    - git
+    - python-dev
+    - libjpeg-dev
+    - libpng-dev
+    - libfreetype6
+    - libfreetype6-dev
+    - zlib1g-dev
+    - python-lxml
+    - libxml2-dev
+    - libxslt1-dev
+    - tidy
