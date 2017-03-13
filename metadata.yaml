@@ -1,6 +1,9 @@
 _repo: The-Mystery-of-the-Yellow-Room_1685
-_version: 0.1.0
+_version: 0.2.0
 alternative_title: Le mystère de la chambre jaune. English
+covers:
+- cover_type: generated
+  image_path: cover.png
 creator:
   author:
     agent_name: Leroux, Gaston
@@ -21,6 +24,8 @@ description: "The Mystery of the Yellow Room (in French Le mystère de la chambr
   \ situation.\nThe novel finds its continuation in The Perfume of the Lady in Black,\
   \ wherein a number of the characters familiar from this story reappear.\n From Wikipedia\
   \ (CC BY-SA)."
+edition_identifiers:
+  edition_id: http://www.gutenberg.org/ebooks/1685#The-Mystery-of-the-Yellow-Room
 gutenberg_bookshelf: Detective Fiction
 gutenberg_issued: '1999-03-01'
 gutenberg_type: Text
